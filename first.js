@@ -1,3 +1,8 @@
-console.log("Hello, World!");
-name="tony";
-console.log(name);
+const user = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 30
+};
+
+
+console.log(user.firstName); 
