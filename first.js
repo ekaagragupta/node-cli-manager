@@ -1,8 +1,4 @@
-const user = {
-  firstName: "John",
-  lastName: "Doe",
-  age: 30
-};
-
-
-console.log(user.age); 
+const color=['red','blue','green','yellow','pink'];
+for(let i=0; i<color.length; i++){
+    console.log(color[i]);
+}
