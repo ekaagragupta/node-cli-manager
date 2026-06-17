@@ -1,5 +1,4 @@
-console.log(typeof "76");
-
-for(let i = 0; i < 5; i++) {
+let str='ekaagra';
+for(let i of str){
     console.log(i);
 }
