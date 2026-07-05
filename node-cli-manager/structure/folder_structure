@@ -1,0 +1,9 @@
+node-cli-manager/
+├── app.js          ← entry point, handles CLI args
+├── errors.js       ← AppError class
+├── logger.js       ← EventEmitter-based logger
+├── commands.js     ← copy + stats logic
+├── .env            ← LOG_FILE_PATH config
+├── .gitignore 
+├── sample.txt      ← test file we'll copy/stat
+└── logs.txt        ← auto-created when app runs
