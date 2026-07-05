@@ -1,2 +1,1 @@
-# mern
-# PF.detailed
+# CLI manager
