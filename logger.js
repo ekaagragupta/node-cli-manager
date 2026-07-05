@@ -29,4 +29,4 @@ class Logger extends EventEmitter {
     }
 }
 module.exports = new Logger();
-//
+//export a single instance 
