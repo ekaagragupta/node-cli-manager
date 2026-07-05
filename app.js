@@ -30,6 +30,13 @@ async function main() {
         }
     }catch(err){
         if(err instanceof AppError){
-            console.error(`\n Error ($)`)
+            console.error(`\n Error (${err.statusCode}): ${err.message}`);
+            logger.log(`Error (${err.statusCode}): ${err.message}`);
+        }else{
+            console.error(`\n Unexpected Error: ${err.message}`);
+            logger.log(`Unexpected Error: ${err.message}`);
+        }
+        process.exit(1);
     }
 }
+main();
