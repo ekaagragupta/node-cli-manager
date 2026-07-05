@@ -16,7 +16,7 @@ try {
   divide(10, 0);
 } catch (err) {
   console.log(err.message);
-  console.group(err.statuscode);
+  console.group(err.statusCode);
   console.log(err.isOperational);
   console.log(err instanceof AppError);
 }
