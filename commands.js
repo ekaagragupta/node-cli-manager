@@ -41,12 +41,12 @@ async function copyFile(source, destination) {
 }
 
 // STATS COMMAND
-async function fileStats(filePath) {
-    if (!filePath) {
-        throw new AppError("File path is required", 400);
+async function fileStats(filename) {
+    if (!filename) {
+        throw new AppError("File name is required", 400);
     }
     try {
-        const stats = await fsPromises.stat(filePath);
+        const stats = await fsPromises.stat(filename);
         const info = {
             filename,
             sizeBytes: stats.size,
@@ -64,7 +64,7 @@ async function fileStats(filePath) {
         console.log(`  Last Modified: ${info.lastModified}`);
     } catch (err) {
         throw new AppError(
-            `Failed to get stats for file "${filePath}": ${err.message}`,
+            `Failed to get stats for file "${filename}": ${err.message}`,
             500,
         );
     }
